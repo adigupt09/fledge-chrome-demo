@@ -22,9 +22,9 @@ function scoreAd(
     score = 0;
     rejectReason = "blocked-by-publisher"
   }
-  const baseUrlForDebug = "https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io"
-  const lossAuctionPath = "/auction_loss"
-  const winAuctionPath = "/auction_win"
+  const baseUrlForDebug = "https://adigupt09.github.io/fledge-chrome-demo/ssp"
+  const lossAuctionPath = "/auction_loss.json"
+  const winAuctionPath = "/auction_win.json"
   const winningBidQueryParam = "winningBid=${winningBid}"
   const madeWinningBidQueryParam = "madeWinningBid=${madeWinningBid}"
   const highestScoringOtherBidQueryParam = "highestScoringOtherBid=${highestScoringOtherBid}"
@@ -52,7 +52,7 @@ function scoreAd(
 
 function reportResult(auctionConfig, browserSignals) {
   log('reportResult', { auctionConfig, browserSignals });
-  sendReportTo(auctionConfig.seller + '/reporting?report=result');
+  sendReportTo(auctionConfig.seller + '/ssp/reporting_success.json');
   return {
     success: true,
     signalsForWinner: { signalForWinner: 1 },

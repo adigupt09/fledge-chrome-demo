@@ -16,9 +16,9 @@ function generateBid(
   //   trustedBiddingSignals,
   //   browserSignals,
   // });
-  const baseUrlForDebug = "https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io"
-  const lossAuctionPath = "/auction_loss"
-  const winAuctionPath = "/auction_win"
+  const baseUrlForDebug = "https://adigupt09.github.io/fledge-chrome-demo/dsp"
+  const lossAuctionPath = "/auction_loss.json"
+  const winAuctionPath = "/auction_win.json"
   const winningBidQueryParam = "winningBid=${winningBid}"
   const madeWinningBidQueryParam = "madeWinningBid=${madeWinningBid}"
   const highestScoringOtherBidQueryParam = "highestScoringOtherBid=${highestScoringOtherBid}"
@@ -75,7 +75,7 @@ function reportWin(
     sellerSignals,
     browserSignals,
   });
-  sendReportTo(browserSignals.interestGroupOwner + '/reporting?report=win');
+  sendReportTo(browserSignals.interestGroupOwner + '/dsp/reporting_success.json');
 }
 
 

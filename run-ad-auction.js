@@ -1,17 +1,17 @@
 // dsp
 const interestGroup1 = {
   name: "shopping",
-  owner: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io',
+  owner: 'https://adigupt09.github.io/fledge-chrome-demo',
 
   // x-allow-fledge: true
-  biddingLogicUrl: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding',
+  biddingLogicUrl: 'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding-logic.js',
 
   // x-allow-fledge: true
   trustedBiddingSignalsUrl:
-    'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding/trusted',
+    'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding_signal.json',
   trustedBiddingSignalsKeys: ['key1', 'key2'],
 
-  dailyUpdateUrl: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding/daily', // not implemented yets
+  dailyUpdateUrl: 'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding/daily', // not implemented yets
   userBiddingSignals: { user_bidding_signals: 'user_bidding_signals' },
   ads: [
     {
@@ -25,17 +25,17 @@ const interestGroup1 = {
 
 const interestGroup2 = {
   name: "travel",
-  owner: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io',
+  owner: 'https://adigupt09.github.io/fledge-chrome-demo',
 
   // x-allow-fledge: true
-  biddingLogicUrl: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding',
+  biddingLogicUrl: 'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding-logic.js',
 
   // x-allow-fledge: true
   trustedBiddingSignalsUrl:
-    'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding/trusted',
+  'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding_signal.json',
   trustedBiddingSignalsKeys: ['key1', 'key2'],
 
-  dailyUpdateUrl: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding/daily', // not implemented yets
+  dailyUpdateUrl: 'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding/daily', // not implemented yets
   userBiddingSignals: { user_bidding_signals: 'user_bidding_signals' },
   ads: [
     {
@@ -49,17 +49,17 @@ const interestGroup2 = {
 
 const interestGroup3 = {
   name: "travel-lapsed",
-  owner: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io',
+  owner: 'https://adigupt09.github.io/fledge-chrome-demo',
 
   // x-allow-fledge: true
-  biddingLogicUrl: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding',
+  biddingLogicUrl: 'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding-logic.js',
 
   // x-allow-fledge: true
   trustedBiddingSignalsUrl:
-    'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding/trusted',
+  'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding_signal.json',
   trustedBiddingSignalsKeys: ['key1', 'key2'],
 
-  dailyUpdateUrl: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/bidding/daily', // not implemented yets
+  dailyUpdateUrl: 'https://adigupt09.github.io/fledge-chrome-demo/dsp/bidding/daily', // not implemented yets
   userBiddingSignals: { user_bidding_signals: 'user_bidding_signals' },
   ads: [
     {
@@ -82,14 +82,14 @@ document.addEventListener('DOMContentLoaded', async (e) => {
 
 // ssp
 const auctionConfig = {
-  seller: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io', // should https & same as decisionLogicUrl's origin
+  seller: 'https://adigupt09.github.io/fledge-chrome-demo', // should https & same as decisionLogicUrl's origin
 
   // x-allow-fledge: true
-  decisionLogicUrl: 'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io/scoring',
+  decisionLogicUrl: 'https://adigupt09.github.io/fledge-chrome-demo/ssp/decision-logic.js',
 
   interestGroupBuyers: [
     // * is not supported yet
-    'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io',
+    'https://adigupt09.github.io/fledge-chrome-demo',
   ],
   // public for everyone
   auctionSignals: { auction_signals: 'auction_signals' },
@@ -100,7 +100,7 @@ const auctionConfig = {
   // only for single party
   perBuyerSignals: {
     // listed on interestGroupByers
-    'https://079bc9d4-3268-4e14-961c-907893d65c8e.mock.pstmn.io': {
+    'https://adigupt09.github.io/fledge-chrome-demo': {
       per_buyer_signals: 'per_buyer_signals',
     },
   },
